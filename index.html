@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <div class="TopContainer">
+            <form id="todoForm">
+                <input id="taskName" placeholder="Item Name" type="text"/>
+                <input id="deadline" placeholder="Deadline" type="date"/>
+                <select id="priority">
+                    <option value="" disabled selected hidden>Priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">low</option>
+                </select>
+            </form>
+           
+            <button>Add Item</button>
+        </div>
+
+        <div class="TodayList">
+            <h1>Today's TodoList</h1>
+            <div class="TodayListContainer">
+
+            </div>
+        </div>
+        <div class="FutureList">
+            <h1>Future TodoList</h1>
+            <div class="FutureListContainer">
+
+            </div>
+        </div>
+        <div class="CompleteList">
+            <h1>Completed Task</h1>
+            <div class="completedListContainer">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
